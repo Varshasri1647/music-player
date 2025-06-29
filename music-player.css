@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.mood-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mood-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mood-card h2 {
+    margin-top: 0;
+}
+
+.mood-card p {
+    font-size: 14px;
+}
+
+.mood-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.happy {
+    background: linear-gradient(135deg, #fbc531, #e1b12c);
+}
+
+.sad {
+    background: linear-gradient(135deg, #487eb0, #40739e);
+}
+
+.calm {
+    background: linear-gradient(135deg, #7ed6df, #22a6b3);
+}
+
+.energetic {
+    background: linear-gradient(135deg, #e84118, #c23616);
+}
+
+.player-container {
+    margin-top: 50px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #555;
+}
+
+@media(max-width: 600px) {
+    .mood-card {
+        width: 150px;
+        height: 150px;
+    }
+}

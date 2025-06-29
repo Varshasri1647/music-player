@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood-Based Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1 class="title">Mood-Based Music Player</h1>
+
+    <div class="mood-container">
+        <div class="mood-card happy" data-mood="happy">
+            <h2>Happy</h2>
+            <p>Play energetic and joyful tracks.</p>
+        </div>
+        <div class="mood-card sad" data-mood="sad">
+            <h2>Sad</h2>
+            <p>Play emotional and soft tracks.</p>
+        </div>
+        <div class="mood-card calm" data-mood="calm">
+            <h2>Calm</h2>
+            <p>Play relaxing and soothing tracks.</p>
+        </div>
+        <div class="mood-card energetic" data-mood="energetic">
+            <h2>Energetic</h2>
+            <p>Play powerful and fast-paced tracks.</p>
+        </div>
+    </div>
+
+    <div class="player-container">
+        <h3 id="now-playing">Select a mood to play music</h3>
+        <audio id="audio-player" controls>
+            <source src="" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
